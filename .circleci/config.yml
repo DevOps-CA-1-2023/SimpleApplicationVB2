@@ -44,4 +44,4 @@ jobs:
     steps:
       - run:
           name: deploy-application
-          command: ssh -o StrictHostKeyChecking=no $EC2_DEVOPS_VB2@$EC2_PUBLIC_DNS "export SERVER=\"$SERVER\"; export PRIVATE_KEY=\"$PRIVATE_KEY\"; rm -rf SimpleApplicationVB2/;git clone https://github.com/DevOps-CA-1-2023/SimpleApplicationVB2.git; source SimpleApplicationVB/deploy.sh"
+          command: ssh -o StrictHostKeyChecking=no $EC2_DEVOPS_VB2@$EC2_PUBLIC_DNS "export SERVER=\"$SERVER\"; export PRIVATE_KEY=\"$PRIVATE_KEY\"; rm -rf SimpleApplicationVB2/;git clone https://github.com/DevOps-CA-1-2023/SimpleApplicationVB2.git; source SimpleApplicationVB2/deploy.sh"
